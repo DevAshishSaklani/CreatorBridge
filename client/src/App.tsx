@@ -4,6 +4,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
             <Route path="/" component={Home} />
             <Route path="/login" component={Home} />
             <Route path="/register" component={Home} />
-            <Route component={Home} />
+            <Route component={NotFound} />
           </Switch>
         </TooltipProvider>
       </ThemeProvider>
