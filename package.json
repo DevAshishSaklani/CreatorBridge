@@ -5,10 +5,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
+<<<<<<< HEAD
     "dev:server": "tsx watch server/index.ts",
     "build": "vite build && pnpm run build:server",
     "build:server": "esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index.js",
     "start": "node dist/index.js",
+=======
+    "build": "vite build",
+>>>>>>> fd2d08067019c85869969b362d189a66bd6b17a2
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
